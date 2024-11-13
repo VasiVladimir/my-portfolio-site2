@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="tasks-title">Задачи</h1>
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <details>
+                <summary>Первая задача</summary>
+                <p>Найти корни квадратного уравнения. Параметры уравнения передавать с командной строкой.</p>
+                
+                <!-- Таблица с описанием переменных -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название переменной</th>
+                            <th>Тип</th>
+                            <th>Параметры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="variable-name">scanner</td>
+                            <td>Scanner</td>
+                            <td>Вход: принимает ввод от пользователя</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">decimalFormat</td>
+                            <td>DecimalFormat</td>
+                            <td>Выход: форматирует вывод</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">a</td>
+                            <td>double</td>
+                            <td>Вход: принимает ввод от пользователя</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">b</td>
+                            <td>double</td>
+                            <td>Вход: принимает ввод от пользователя</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">c</td>
+                            <td>double</td>
+                            <td>Вход: принимает ввод от пользователя</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">D</td>
+                            <td>double</td>
+                            <td>Временная: хранит значение дискриминанта</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">x1</td>
+                            <td>double</td>
+                            <td>Выход: хранит первый корень</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">x2</td>
+                            <td>double</td>
+                            <td>Выход: хранит второй корень</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">x</td>
+                            <td>double</td>
+                            <td>Выход: хранит единственный корень, если D == 0</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">result1</td>
+                            <td>String</td>
+                            <td>Временная: форматированный первый корень для вывода</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Блок для изображений -->
+                <div class="images">
+                    <img src="images/image1.png" alt="Описание изображения 1">
+                    <img src="images/image2.png" alt="Описание изображения 2">
+                    <img src="images/image3.png" alt="Описание изображения 3">
+                 
+                </div>
+            </details>
+            <!-- Остальные задачи могут быть добавлены ниже аналогично -->
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для второй задачи -->
+            <details>
+                <summary>Вторая задача</summary>
+                <p>Создать классы, спецификации которых приведены ниже. Определить конструкторы и методы setТип(), getТип(), toString(). Определить дополнительно методы в классе, создающем массив объектов. Задать критерий выбора данных и вывести эти данные на консоль. В каждом классе, обладающем информацией, должно быть объявлено несколько конструкторов.<br>
+                <strong>Patient:</strong> id, Фамилия, Имя, Отчество, Адрес, Телефон, Номер медицинской карты, Диагноз. Создать массив объектов. Вывести: <br>a) список пациентов, имеющих данный диагноз;<br> b) список пациентов, номер медицинской карты которых находится в заданном интервале.</p>
+
+                <!-- Таблица с описанием переменных -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название переменной</th>
+                            <th>Тип</th>
+                            <th>Параметры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="variable-name">id</td>
+                            <td>int</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">lastName</td>
+                            <td>String</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">firstName</td>
+                            <td>String</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">middleName</td>
+                            <td>String</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">address</td>
+                            <td>String</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">phone</td>
+                            <td>String</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">medicalCardNumber</td>
+                            <td>int</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">diagnosis</td>
+                            <td>String</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">patients</td>
+                            <td>Patient[]</td>
+                            <td>вход/выход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">searchDiagnosis</td>
+                            <td>String</td>
+                            <td>вход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">cardNumberLower</td>
+                            <td>int</td>
+                            <td>вход</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">cardNumberUpper</td>
+                            <td>int</td>
+                            <td>вход</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Блок для одного изображения -->
+                <div class="images">
+                    <img src="images/patient_class.png" alt="Диаграмма класса Patient">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для третьей задачи -->
+            <details>
+                <summary>Третья задача</summary>
+                <p>Создать объект класса Самолет, используя классы Крыло, Шасси, Двигатель. Методы: летать, задавать маршрут, вывести на консоль маршрут.</p>
+
+                <!-- Таблица с описанием переменных -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название переменной</th>
+                            <th>Тип переменной</th>
+                            <th>Параметры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="variable-name">wings</td>
+                            <td>List&lt;Wing&gt;</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">chassis</td>
+                            <td>Chassis</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">engines</td>
+                            <td>List&lt;Engine&gt;</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">route</td>
+                            <td>String</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">wheels</td>
+                            <td>int</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">type</td>
+                            <td>String</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">power</td>
+                            <td>int</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">length</td>
+                            <td>double</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">area</td>
+                            <td>double</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">leftWing</td>
+                            <td>Wing</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">rightWing</td>
+                            <td>Wing</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">engine1</td>
+                            <td>Engine</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">engine2</td>
+                            <td>Engine</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">airplane</td>
+                            <td>Airplane</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">args</td>
+                            <td>String[]</td>
+                            <td>Входящий</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Блок для одного изображения -->
+                <div class="images">
+                    <img src="images/airplane_class.png" alt="Диаграмма класса Самолет">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для четвёртой задачи -->
+            <details>
+                <summary>Четвёртая задача</summary>
+                <p>Создать класс Account с внутренним классом, с помощью объектов которого можно хранить информацию обо всех операциях со счетом (снятие, платежи, поступления).</p>
+
+                <!-- Таблица с описанием переменных -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название переменной</th>
+                            <th>Тип</th>
+                            <th>Параметры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="variable-name">balance</td>
+                            <td>double</td>
+                            <td>Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">transactions</td>
+                            <td>List&lt;Transaction&gt;</td>
+                            <td>Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">date</td>
+                            <td>Date</td>
+                            <td>Внутренний</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">type</td>
+                            <td>String</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">amount</td>
+                            <td>double</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">balanceAfter</td>
+                            <td>double</td>
+                            <td>Внутренний</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">command</td>
+                            <td>String</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">amount (в методе)</td>
+                            <td>double</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">scanner</td>
+                            <td>Scanner</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">transaction</td>
+                            <td>Transaction</td>
+                            <td>Внутренний</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Блок для одного изображения -->
+                <div class="images">
+                    <img src="images/account_class.png" alt="Диаграмма класса Account">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для пятой задачи -->
+            <details>
+                <summary>Пятая задача</summary>
+                <p>В тексте после буквы Р, если она не последняя в слове, ошибочно напечатана буква А вместо О. Внести исправления в текст.</p>
+
+                <!-- Таблица с описанием переменных -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название переменной</th>
+                            <th>Тип переменной</th>
+                            <th>Параметры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="variable-name">scanner</td>
+                            <td>Scanner</td>
+                            <td>Входящее</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">text</td>
+                            <td>String</td>
+                            <td>Входящее</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">correctedText</td>
+                            <td>String</td>
+                            <td>Выходящее (вывод в консоль)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Блок для одного изображения, если нужно -->
+                <div class="images">
+                    <img src="images/text_correction.png" alt="Диаграмма работы с текстом">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+<body>
+
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для шестой задачи -->
+            <details>
+                <summary>Шестая задача</summary>
+                <p>Выполнить задания на основе задачи № 3, контролируя состояние потоков ввода/вывода. При возникновении ошибок, связанных с корректностью выполнения математических операций, генерировать и обрабатывать исключительные ситуации. Предусмотреть обработку исключений, возникающих при нехватке памяти, отсутствии требуемой записи (объекта) в файле, недопустимом значении поля и т. д. Реализовать собственные обработчики исключений и исключения ввода/вывода.</p>
+
+                <!-- Таблица с описанием переменных -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название переменной</th>
+                            <th>Тип переменной</th>
+                            <th>Параметры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="variable-name">wings</td>
+                            <td>List&lt;Wing&gt;</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">chassis</td>
+                            <td>Chassis</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">engines</td>
+                            <td>List&lt;Engine&gt;</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">route</td>
+                            <td>String</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">wheels</td>
+                            <td>int</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">type</td>
+                            <td>String</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">power</td>
+                            <td>int</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">length</td>
+                            <td>double</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">area</td>
+                            <td>double</td>
+                            <td>Входящий/Выходящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">leftWing</td>
+                            <td>Wing</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">rightWing</td>
+                            <td>Wing</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">engine1</td>
+                            <td>Engine</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">engine2</td>
+                            <td>Engine</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">airplane</td>
+                            <td>Airplane</td>
+                            <td>Входящий</td>
+                        </tr>
+                        <tr>
+                            <td class="variable-name">args</td>
+                            <td>String[]</td>
+                            <td>Входящий</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Блок для двух изображений -->
+                <div class="images">
+                    <img src="images/exception_handling1.png" alt="Обработка исключений 1">
+                    <img src="images/exception_handling2.png" alt="Обработка исключений 2">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+<body>
+
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для седьмой и восьмой задачи -->
+            <details>
+                <summary>Задача 7 и 8</summary>
+                <p>Создать меню, изображающее себя в форме столбца. Для этого рационально использовать виртуальные методы, т.е. достаточно изменить метод Draw объекта TNeatMenu и объявить одноименные методы виртуальными.</p>
+
+
+                <!-- Блок для двух изображений -->
+                <div class="images">
+                    <img src="images/menu_example1.png" alt="Пример меню 1">
+                    <img src="images/menu_example2.png" alt="Пример меню 2">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+<body>
+
+    <div class="dropdowns-container">
+        <div class="dropdowns">
+            <!-- Выпадающий список для задачи 9 -->
+            <details>
+                <summary>Задача 9</summary>
+                <p>Сделать игру "Математико".</p>
+
+                <!-- Блок для одного изображения -->
+                <div class="images">
+                    <img src="images/math_game_example.png" alt="Пример игры Математико">
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* Основной фон сайта */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Бежевый фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Заголовок страницы */
+.tasks-title {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Контейнер для выравнивания списка справа */
+.dropdowns-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Стили для выпадающих списков */
+.dropdowns {
+    width: 100%;
+}
+
+/* Стили для details с анимацией высоты */
+details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Переход на все изменения */
+    overflow: hidden;
+    max-width: 100%; /* Устанавливает максимальную ширину в 100% контейнера */
+}
+
+/* Стили для раскрытого details */
+details[open] {
+    width: 100%; /* Занимает всю доступную ширину */
+    padding: 15px;
+}
+
+/* Стили для кнопок на главной странице */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Эффект при наведении на кнопки */
+.button:hover {
+    background-color: #333;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+td.variable-name {
+    color: red;
+    font-style: italic;
+}
+
+/* Чередование цветов строк для лучшей читаемости */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Стили для главного изображения и текста */
+.content {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    background-image: url('images/Pervoe.png'); /* Путь к вашему изображению */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Стили для текста в контейнере */
+h1 {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Стили для изображения */
+.images {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.images img {
+    max-width: 100%; /* Изображение будет адаптивным */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
